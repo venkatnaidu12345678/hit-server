@@ -1,0 +1,12 @@
+services:
+  - type: worker
+    name: sharewheels-health-pinger
+    runtime: node
+    plan: starter
+    buildCommand: echo "No build step"
+    startCommand: npm start
+    envVars:
+      - key: TARGET_URL
+        value: https://sharewheels-backend.onrender.com/health
+      - key: INTERVAL_MS
+        value: "3000"

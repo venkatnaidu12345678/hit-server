@@ -1,0 +1,13 @@
+{
+  "name": "hit-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Ping sharewheels backend health endpoint on a loop",
+  "main": "ping.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node ping.js"
+  }
+}
